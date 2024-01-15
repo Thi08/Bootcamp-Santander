@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 233, 208);
+}
+
+.cores-familia {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.cores-familia p {
+  padding: 1vw;
+  font-size: 1vw;
+}
+
+.cores-titulo {
+  font-weight: 800;
+}
+
+.quadrado {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.pai {
+  background-color: rgb(252, 96, 96);
+}
+
+.mae {
+  background-color: rgb(92, 92, 255);
+}
+
+.filho {
+  background-color: rgb(95, 139, 95);
+}
+
+.filha {
+  background-color: rgb(252, 252, 123);
+}
+
+.todos {
+  background-color: rgb(184, 184, 184);
+}
+
+.titulo {
+  padding: 1vw;
+  text-align: center;
+  background-color: rgb(255, 218, 172);
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main div {
+  padding-bottom: 5vw;
+}
+
+.cardapio,
+.supermercado,
+.tarefas {
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;  /* Combined width for all three */
+}
+
+.cardapio {
+  width: 60%;  /* Override width for cardapio */
+  background-color: #bfd7aa;
+}
+
+.supermercado {
+  background-color: #93deee;
+}
+
+.tarefas {
+  background-color: #ffd4e1;
+}
+
+.cardapio-titulo,
+.supermercado-titulo,
+.tarefas-titulo {
+  text-align: center;
+  padding: 2vw 0;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+
+.tabela-cardapio {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.tabela-cardapio th,
+.tabela-cardapio td {
+  padding: 20px;
+}
+
+.tabela-cardapio th {
+  background-color: #a7d67d;
+}
+
+.supermercado-lista,
+.tarefas-lista {
+  list-style: none;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.supermercado-lista li,
+.tarefas-lista li {
+  padding: 0.25vw;
+  border: 1px solid #333;
+}
