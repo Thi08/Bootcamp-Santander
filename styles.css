@@ -11,7 +11,6 @@ body {
 .cores-familia {
   display: flex;
   text-align: center;
-  margin-bottom: 1vw;
 }
 
 .cores-familia p {
@@ -55,7 +54,6 @@ body {
   padding: 1vw;
   text-align: center;
   background-color: rgb(255, 218, 172);
-  margin-bottom: 1vw;
   font-size: 2vw;
 }
 
@@ -72,14 +70,18 @@ main div {
 .cardapio,
 .supermercado,
 .tarefas {
-  padding: 20px;
+  padding: 15px;
   display: inline-block;
   vertical-align: top;
-  width: 20%;  /* Combined width for all three */
+}
+
+.supermercado,
+.tarefas {
+  width: 20%;
 }
 
 .cardapio {
-  width: 60%;  /* Override width for cardapio */
+  width: 60%;
   background-color: #bfd7aa;
 }
 
@@ -95,20 +97,22 @@ main div {
 .supermercado-titulo,
 .tarefas-titulo {
   text-align: center;
-  padding: 2vw 0;
-  font-size: 1.5vw;
+  padding: 0 0 1vw 0;
+  font-size: 1.4vw;
   font-style: italic;
 }
 
 .tabela-cardapio {
   margin: auto;
   border-collapse: collapse;
-  width: 80%;
+  width: 90%;
+  font-size: 1vw;
 }
 
 .tabela-cardapio th,
 .tabela-cardapio td {
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .tabela-cardapio th {
@@ -117,13 +121,70 @@ main div {
 
 .supermercado-lista,
 .tarefas-lista {
-  list-style: none;
-  text-align: center;
   font-size: 1vw;
+  list-style-position: inside;
+}
+
+.supermercado-lista {
+  list-style-type: " - ";
 }
 
 .supermercado-lista li,
 .tarefas-lista li {
   padding: 0.25vw;
   border: 1px solid #333;
+}
+
+@media (max-width: 1200px) {
+  .cardapio {
+    width: 100%;
+  }
+
+  .supermercado,
+  .tarefas {
+    width: 50%;
+  }
+
+  .supermercado-lista,
+  .tarefas-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supermercado-lista li,
+  .tarefas-lista li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 2.5vw;
+  }
+
+  .cores-familia p {
+    font-size: 1.5vw;
+  }
+
+  .cardapio,
+  .supermercado,
+  .tarefas {
+    width: 100%;
+  }
+
+  .tabela-cardapio {
+    font-size: 1.5vw;
+  }
+
+  .cardapio-titulo,
+  .supermercado-titulo,
+  .tarefas-titulo {
+    font-size: 1.9vw;
+  }
+
+  .supermercado-lista,
+  .tarefas-lista {
+    font-size: 1.5vw;
+  }
 }

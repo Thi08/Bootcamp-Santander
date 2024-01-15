@@ -27,6 +27,7 @@
       <h2 class="cardapio-titulo">Cardápio Semanal</h2>
       <table border="1" class="tabela-cardapio">
         <thead>
+          <th></th>
           <th>Segunda</th>
           <th>Terça</th>
           <th>Quarta</th>
@@ -43,16 +44,27 @@
             <td>Iogurte com Granola</td>
             <td>Café Preto</td>
             <td>Torradas com Abacate</td>
-            <td>Pão Integral com Queijo</td>
+            <td colspan="2">Pão Integral com Queijo</td>
+            <!-- <td>Cereais com Leite</td> -->
           </tr>
           <tr>
-            <th>Almoço</th>
+            <th rowspan="2">Almoço</th>
             <td>Salada de Proteínas</td>
             <td>Frango Grelhado com Quinoa</td>
             <td>Peixe Assado com Legumes</td>
             <td>Arroz Integral com Vegetais</td>
             <td>Salada de Atum</td>
             <td>Macarrão com Molho de Tomate</td>
+            <td>Churrasco em Família</td>
+          </tr>
+          <tr>
+            <td>Estrogonofe de Carne</td>
+            <td>Peito de Peru ao Forno</td>
+            <td>Ensopado de Lentilhas</td>
+            <td>Quibe de Abóbora</td>
+            <td>Salada de Frango Grelhado</td>
+            <td>Lasanha de Legumes</td>
+            <td>Bife à Parmegiana</td>
           </tr>
           <tr>
             <th>Lanche</th>
@@ -61,16 +73,26 @@
             <td>Lanche de Aveia</td>
             <td>Frutas Secas</td>
             <td>Smoothie Verde</td>
-            <td>Iogurte com Frutas</td>
+            <td colspan="2">Iogurte com Frutas</td>
           </tr>
           <tr>
-            <th>Janta</th>
+            <th rowspan="2">Janta</th>
             <td>Sopa de Legumes</td>
             <td>Salada Caesar</td>
             <td>Pizza Vegetariana</td>
             <td>Wrap de Frango</td>
             <td>Legumes Grelhados</td>
             <td>Sushi Veggie</td>
+            <td>Mingau de Aveia</td>
+          </tr>
+          <tr>
+            <td>Creme de Aspargos</td>
+            <td>Salada de Camarão</td>
+            <td>Massa ao Pesto</td>
+            <td>Risoto de Cogumelos</td>
+            <td>Tacos de Peixe</td>
+            <td>Tempurá de Vegetais</td>
+            <td>Feijoada</td>
           </tr>
         </tbody>
       </table>
@@ -110,15 +132,14 @@
 
     <div class="tarefas">
       <h2 class="tarefas-titulo">Tarefas</h2>
-      <ul class="tarefas-lista">
+      <ol class="tarefas-lista">
         <li class="pai">Preparar refeições saudáveis</li>
         <li class="mae">Limpar a casa (evitar produtos com nozes ou frutos do mar)</li>
         <li class="filho">Estudar para a escola</li>
         <li class="filha">Praticar piano</li>
         <li class="todos">Fazer exercícios físicos em família</li>
         <li class="todos">Tempo em família</li>
-
-      </ul>
+      </ol>
     </div>
   </main>
 </body>
