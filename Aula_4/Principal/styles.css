@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  padding: 10px 10%;
+  height: 100px;
+  text-align: center;
+  /* background-color: #bfcec2; */
+  background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/22964952-mistico-floresta-cena-as-noite-como-digital-arte-gerar-ai-gratis-foto.jpg');
+}
+
+/* Estilizando a imagem no header */
+header img,
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+}
+
+/* Estilizando a div no header */
+header div {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  vertical-align: middle;
+
+}
+
+header div h1 {
+  font-size: 40px;
+  color: rosybrown
+}
+
+header div p {
+  font-size: 20px;
+  color: white;
+}
+
+/* Estilizando a navegação no header */
+header nav {
+  float: right;
+  line-height: 100px;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.descricao {
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 25vw;
+  margin-top: 2%;
+}
+
+.conteudo-descricao {
+  text-align: center;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  width: 48%;
+  height: 100%;
+  padding: 50px;
+  display: inline-block;
+  background-color: #bfcec2;
+  border-radius: 20px;
+}
+
+.descricao img {
+  width: 48%;
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+.ver-mais {
+  color: black;
+  font-weight: 900;
+  font-size: 1.1vw;
+}
+
+#main {
+  margin-top: 50px;
+  padding: 50px;
+  background: #ebffeecc;
+}
+
+.main-titulo {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.cards-produtos {
+  margin-top: 20px;
+}
+
+.card-bolos,
+.cards-bebidas {
+  width: 23%;
+  margin-right: 2%;
+  vertical-align: top;
+}
+
+.card-bolos article,
+.cards-bebidas article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-bolos article figure,
+.cards-bebidas article figure {
+  margin-bottom: 8px;
+}
+
+.card-bolos article figure img,
+.cards-bebidas article figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-bolos article p,
+.cards-bebidas article p {
+  margin-top: 10px;
+}
+
+.card-bolos article figcaption,
+.cards-bebidas article figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sessao-precos {
+  padding: 70px;
+}
+
+.sessao-precos {
+  background-image: url("https://img.freepik.com/vetores-gratis/modelo-de-plano-de-fundo-com-estrelas-brilhantes-no-ceu-escuro_1308-40081.jpg?w=1380&t=st=1705498560~exp=1705499160~hmac=78ec1dbab95d22d0e1b1d11b10e04c1f119a0156fd5a07d37f1bdbda68a1b5a4");
+  background-size: cover;
+}
+
+.sessao-precos p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  letter-spacing: 2px;
+  padding: 30px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 1);
+  background: #02023b;
+  border-radius: 20px;
+}
+
+.sessao-precos table {
+  border-collapse: collapse;
+  font-size: 1vw;
+  margin: 50px auto;
+  width: 60%;
+}
+
+.sessao-precos table th,
+.sessao-precos table td {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.sessao-precos table th {
+  background: #01012b;
+}
+
+.sessao-precos table td {
+  background: #02023b;
+}
+
+.card-eventos {
+  padding: 70px;
+  background: #dcf0df;
+  text-align: center;
+}
+
+.card-eventos article {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  vertical-align: middle;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  height: 270px;
+  display: inline-block;
+  text-align: center;
+}
+
+.card-eventos article p {
+  margin-top: 20px;
+}
+
+.form-section {
+  padding: 120px;
+  background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/22182684-magia-floresta-beleza-natureza-flores-plantas-arvores-neon-luzes-colorida-digital-ai-ilustracao-gratis-foto.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-image: url('https://i.pinimg.com/564x/ea/34/53/ea345305c5bf51645a64685e7b30b8c1.jpg');
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1vw;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-size: 0.8vw;
+}
+
+input[type="submit"] {
+  background: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+footer {
+  height: 400px;
+  padding: 50px 40%;
+  text-align: center;
+  background: #bfcec2;;
+}
+
+footer div{
+  display: block;
+}
+
+footer div h2,
+footer div a{
+  display: block;
+  margin: 20px 0;
+}
+
+footer div h2{
+  font-size: 1.5vw;
+  margin-bottom: 40px;
+}
+
+footer div a{
+  font-size: 0.8vw;
+  text-decoration: none;
+  color: black;
+}
+
+footer div a:hover{
+  color: white;
+}

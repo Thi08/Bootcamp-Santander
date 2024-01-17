@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ajude a Causa</title>
+</head>
+
+<body>
+    <div class="registro-participante">
+        <h1>Evento da ONG Ajude a Causa</h1>
+        <form action="http://localhost:3000/form" method="post" id="form-registro">
+
+            <label for="nome">Nome do participante:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tamanho">Tamanho da camiseta:</label>
+            <select id="tamanho" name="tamanho" required>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="XG">XG</option>
+            </select>
+
+            <label for="categoria">Categoria de inscrição:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="3RUN">Corrida 3km</option>
+                <option value="5RUN">Corrida 5km</option>
+                <option value="4WALK">Caminhada 4km</option>
+            </select>
+
+            <label for="doacao">Valor da Doação:</label>
+            <input type="number" id="doacao" name="doacao" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

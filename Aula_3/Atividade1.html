@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Viagem</title>
+
+  <style>
+    body {
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    select {
+      height: 40px;
+    }
+
+    label {
+      margin-bottom: 8px;
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+  <script src="Atividade2.js"></script>
+
+</head>
+<body>
+  <form action="Atividade2.html" id="formulario">
+    <label for="username">Nome:</label>
+    <input type="text" id="username" name="username" placeholder="Digite seu nome"><br>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data"><br>
+
+    <label for="number">Número de Passageiros:</label>
+    <input type="number" id="number" placeholder="Informe o número de passageiros"><br>
+
+    <label for="pais">País:</label>
+    <select name="paises" id="pais">
+      <option value="brasil">Brasil</option>
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+    </select><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
+
+    <label for="refeicao">Tipo de Refeição:</label>
+    <select name="refeicao" id="refeicao">
+      <option value="tipo_refeicao">Tipo de refeição</option>
+      <option value="vegetariana">Vegetariana</option>
+      <option value="gluten">Sem glúten</option>
+      <option value="padrao">Padrão</option>
+    </select><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" placeholder="(35)12345-6789"><br>
+
+    <label for="destino">Destino:</label>
+    <select name="destino" id="destino">
+      <option value="endereco">Endereço de destino</option>
+      <option value="londres">Londres</option>
+      <option value="novayork">Nova York</option>
+      <option value="toquio">Tóquio</option>
+    </select><br>
+
+    <label for="preferencia">Preferência de Assento:</label>
+    <select name="preferencia" id="preferencia">
+      <option value="assento">Preferência de assento</option>
+      <option value="janela">Janela</option>
+      <option value="corredor">Corredor</option>
+      <option value="saida">Próximo a saída</option>
+    </select><br>
+
+    <label for="cartao">Número do Cartão de Crédito:</label>
+    <input type="text" id="cartao" placeholder="Digite o número do seu cartão de crédito"><br>
+
+    <label for="passaporte">Envie uma foto do seu passaporte:</label>
+    <input type="file" id="passaporte"><br>
+
+    <input type="checkbox" id="servico_de_quarto" name="servico_de_quarto" value="Serviço de quarto">
+    <label for="servico_de_quarto">Serviço de quarto</label>
+
+    <input type="checkbox" id="traslado_aeroporto" name="traslado_aeroporto" value="Traslado do aeroporto">
+    <label for="traslado_aeroporto">Traslado do aeroporto</label>
+
+    <input type="checkbox" id="passeios_turisticos" name="passeios_turisticos" value="Passeios Turisticos">
+    <label for="passeios_turisticos">Passeios Turisticos</label>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
