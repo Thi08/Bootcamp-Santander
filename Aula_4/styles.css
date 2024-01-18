@@ -9,14 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+header{
   padding: 10px 10%;
   height: 12vh;
   text-align: center;
   background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/22964952-mistico-floresta-cena-as-noite-como-digital-arte-gerar-ai-gratis-foto.jpg");
 }
 
-/* Estilizando a imagem no header */
 header img,
 footer img {
   max-width: 100%;
@@ -24,18 +23,12 @@ footer img {
   float: left;
 }
 
-/* Estilizando a div no header */
 header div {
   display: inline-block;
-  text-align: center;
-  margin: 0 auto;
-  height: 100%;
-  vertical-align: middle;
 }
 
 header div h1 {
   font-size: 40px;
-  color: rosybrown;
 }
 
 header div p {
@@ -43,10 +36,9 @@ header div p {
   color: white;
 }
 
-/* Estilizando a navegação no header */
 header nav {
   float: right;
-  line-height: 100px;
+  line-height: 10vh;
 }
 
 header nav a {
@@ -58,13 +50,14 @@ header nav a {
 
 header nav a:hover {
   color: #8384df;
-  transform: scale(1.2);
+  font-size: 30px;
+  transition: all 0.4 ease;
 }
 
 .descricao {
+  width: 100%;
   overflow: hidden;
   text-align: center;
-  margin: 0 auto;
   padding: 100px 10%;
   background: linear-gradient(to bottom, #24383d, #4e8286);
   height: 70vh;
@@ -105,8 +98,9 @@ header nav a:hover {
 }
 
 .ver-mais:hover {
-  transform: scale(1.1);
+  font-size: 1.6vw;
   transition: all 0.4s ease;
+  color: #8384df;
 }
 
 #main {
@@ -143,6 +137,11 @@ header nav a:hover {
   margin-right: 2%;
   margin-bottom: 2%;
   height: 60vh;
+}
+
+.cards section:hover{
+  transform: scale(1.1);
+  transition: all 0.4 ease;
 }
 
 .cards section figure {
@@ -339,9 +338,8 @@ footer {
 }
 
 footer img {
-  width: 10%;
   height: auto;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 footer .contato {
