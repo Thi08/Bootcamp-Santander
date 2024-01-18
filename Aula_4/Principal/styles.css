@@ -58,6 +58,7 @@ header nav a {
 
 header nav a:hover{
   color: #8384df;
+  transform: scale(1.2);
 }
 
 .descricao {
@@ -103,8 +104,13 @@ header nav a:hover{
   font-size: 1.4vw;
 }
 
+.ver-mais:hover{
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
 #main {
-  background: linear-gradient(to bottom, #4e8286, #5998a6);
+  background: linear-gradient(to bottom, #4e8286, #24383d);
 }
 
 .main-titulo {
@@ -113,29 +119,32 @@ header nav a:hover{
   font-size: 2.8vw;
   margin: 0 auto;
   padding: 70px;
-  color: #0f2433;
+  color: #f17ea1;
+  font-family: 'Meow Script', cursive;
+
 }
 
 .cards-produtos {
   padding: 50px;
   width: 100%;
+  text-align: center;
 }
 
 .cards {
-  vertical-align: top;
-  text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .cards section {
   background-color: #f9f9f9;
   padding: 20px;
-  margin: 10px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  float: left;
   width: 18%;
-  vertical-align: middle;
-  height: 610px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: 60vh;
 }
 
 .cards section figure {
@@ -204,16 +213,17 @@ header nav a:hover{
 }
 
 .card-eventos {
-  padding: 70px;
-  background: grey;
+  padding: 120px;
+  background: linear-gradient(to bottom, #0f2433, 
+  #2e303b);
   text-align: center;
+  height: 80vh;
 }
 
 .card-eventos section {
   background-color: #f9f9f9;
   padding: 30px;
-  margin-left: 30px;
-  margin-bottom: 40px;
+  margin: 0 4% 4% 0;
   vertical-align: middle;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -225,35 +235,44 @@ header nav a:hover{
 
 .card-eventos section p {
   margin-top: 20px;
+  font-size: 0.8vw;
 }
 
-.historia-form {
-  padding: 120px;
+#historia-form {
+  padding: 120px ;
   background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/22182684-magia-floresta-beleza-natureza-flores-plantas-arvores-neon-luzes-colorida-digital-ai-ilustracao-gratis-foto.jpeg");
   background-size: cover;
   background-position: center;
-  text-align: center;
-  vertical-align: middle;
   width: 100%;
+  overflow: hidden;
 }
 
-#historia {
-  display: inline-block;
-  width: 40%;
+.historia {
+  float: left;
+  width: 60%;
+  text-align: center;
+  background-color: #0000007e;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .titulo-historia {
-  font-size: 2.5vw;
-  padding: 50px;
+  font-size: 2.3vw;
   text-shadow: 2px 2px 2px rgb(0, 0, 0, 1);
+  color: white;
+  margin-bottom: 2%;
 }
 
-#historia p {
-  font-size: 1.25vw;
-  width: 50%;
+.historia p {
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  font-weight: 700;
   margin: 0 auto;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  color: white;
+
 }
+
 
 form {
   float: right;
@@ -263,14 +282,16 @@ form {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 1vw;
+  font-size: 1.2vw;
+  margin-right: 5%;
 }
+
 
 input,
 textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0 20px 0;
+  margin: 20px 0 20px 0;
   border: 1px solid #ccc;
   border-radius: 12px;
 }
@@ -282,6 +303,28 @@ label {
 input::placeholder,
 textarea::placeholder {
   font-size: 0.8vw;
+}
+
+aside form .area-checkbox,
+aside form .div-novidades{
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+aside form .area-checkbox .div-checkbox{
+  float: left;
+  width: 28%;
+  font-size: 1vw;
+}
+
+aside form .area-checkbox .div-checkbox input{
+  width: 20%;
+}
+
+aside form .div-novidades input{
+  width: 5%;
 }
 
 input[type="submit"] {
@@ -297,7 +340,7 @@ footer {
   height: 400px;
   padding: 50px 40%;
   text-align: center;
-  background: #bfcec2;
+  background: #58507e;
 }
 
 footer div {
