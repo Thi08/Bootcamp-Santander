@@ -5,12 +5,15 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  padding: 10px 10%;
-  height: 100px;
+  padding: 20px 10%;
+  height: 12vh;
   text-align: center;
-  /* background-color: #bfcec2; */
-  background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/22964952-mistico-floresta-cena-as-noite-como-digital-arte-gerar-ai-gratis-foto.jpg');
+  background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/22964952-mistico-floresta-cena-as-noite-como-digital-arte-gerar-ai-gratis-foto.jpg");
 }
 
 /* Estilizando a imagem no header */
@@ -28,12 +31,11 @@ header div {
   margin: 0 auto;
   height: 100%;
   vertical-align: middle;
-
 }
 
 header div h1 {
   font-size: 40px;
-  color: rosybrown
+  color: rosybrown;
 }
 
 header div p {
@@ -54,29 +56,41 @@ header nav a {
   color: white;
 }
 
+header nav a:hover{
+  color: #8384df;
+}
+
 .descricao {
   overflow: hidden;
   text-align: center;
-  width: 80%;
   margin: 0 auto;
-  height: 25vw;
-  margin-top: 2%;
+  padding: 100px 10%;
+  background: linear-gradient(to bottom, #24383d, #4e8286);
+  height: 70vh;
+  vertical-align: middle;
 }
 
 .conteudo-descricao {
   text-align: center;
-  font-size: 1.3vw;
-  line-height: 2vw;
-  width: 48%;
+  font-size: 1.8vw;
+  line-height: 2.1vw;
+  width: 40%;
   height: 100%;
-  padding: 50px;
+  padding: 0 20px;
+  font-weight: 700;
   display: inline-block;
-  background-color: #bfcec2;
-  border-radius: 20px;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
+}
+
+.cafe-destaque {
+  color: #8384df;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.7vw;
 }
 
 .descricao img {
-  width: 48%;
+  width: 50%;
   float: right;
   max-width: 100%;
   max-height: 100%;
@@ -84,75 +98,74 @@ header nav a {
 }
 
 .ver-mais {
-  color: black;
+  color: white;
   font-weight: 900;
-  font-size: 1.1vw;
+  font-size: 1.4vw;
 }
 
 #main {
-  margin-top: 50px;
-  padding: 50px;
-  background: #ebffeecc;
+  background: linear-gradient(to bottom, #4e8286, #5998a6);
 }
 
 .main-titulo {
   text-align: center;
-  font-size: 1.5vw;
+  text-decoration: underline;
+  font-size: 2.8vw;
+  margin: 0 auto;
+  padding: 70px;
+  color: #0f2433;
 }
 
 .cards-produtos {
-  margin-top: 20px;
+  padding: 50px;
+  width: 100%;
 }
 
-.card-bolos,
-.cards-bebidas {
-  width: 23%;
-  margin-right: 2%;
+.cards {
   vertical-align: top;
+  text-align: center;
 }
 
-.card-bolos article,
-.cards-bebidas article {
+.cards section {
   background-color: #f9f9f9;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 10px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 18%;
+  vertical-align: middle;
+  height: 610px;
 }
 
-.card-bolos article figure,
-.cards-bebidas article figure {
+.cards section figure {
   margin-bottom: 8px;
 }
 
-.card-bolos article figure img,
-.cards-bebidas article figure img {
+.cards section figure img {
   width: 100%;
+  height: 30vh;
   border-radius: 10px;
+  border: 1px solid #f1f1f1;
 }
 
-.card-bolos article p,
-.cards-bebidas article p {
-  margin-top: 10px;
-}
-
-.card-bolos article figcaption,
-.cards-bebidas article figcaption {
+.cards section figure figcaption {
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
+  font-size: 0.9vw;
+  margin: 20px auto;
 }
 
-.sessao-precos {
+#eventos {
   padding: 70px;
 }
 
-.sessao-precos {
+#eventos {
   background-image: url("https://img.freepik.com/vetores-gratis/modelo-de-plano-de-fundo-com-estrelas-brilhantes-no-ceu-escuro_1308-40081.jpg?w=1380&t=st=1705498560~exp=1705499160~hmac=78ec1dbab95d22d0e1b1d11b10e04c1f119a0156fd5a07d37f1bdbda68a1b5a4");
   background-size: cover;
 }
 
-.sessao-precos p {
+#eventos p {
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -163,40 +176,40 @@ header nav a {
   color: white;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 1);
-  background: #02023b;
+  background: #0f2433;
   border-radius: 20px;
 }
 
-.sessao-precos table {
+#eventos table {
   border-collapse: collapse;
   font-size: 1vw;
   margin: 50px auto;
   width: 60%;
 }
 
-.sessao-precos table th,
-.sessao-precos table td {
+#eventos table th,
+#eventos table td {
   padding: 20px;
   text-align: center;
   color: white;
   font-weight: 700;
 }
 
-.sessao-precos table th {
-  background: #01012b;
+#eventos table th {
+  background: #071824;
 }
 
-.sessao-precos table td {
-  background: #02023b;
+#eventos table td {
+  background: #0f2433;
 }
 
 .card-eventos {
   padding: 70px;
-  background: #dcf0df;
+  background: grey;
   text-align: center;
 }
 
-.card-eventos article {
+.card-eventos section {
   background-color: #f9f9f9;
   padding: 30px;
   margin-left: 30px;
@@ -210,21 +223,43 @@ header nav a {
   text-align: center;
 }
 
-.card-eventos article p {
+.card-eventos section p {
   margin-top: 20px;
 }
 
-.form-section {
+.historia-form {
   padding: 120px;
   background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/22182684-magia-floresta-beleza-natureza-flores-plantas-arvores-neon-luzes-colorida-digital-ai-ilustracao-gratis-foto.jpeg");
   background-size: cover;
   background-position: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#historia {
+  display: inline-block;
+  width: 40%;
+}
+
+.titulo-historia {
+  font-size: 2.5vw;
+  padding: 50px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 1);
+}
+
+#historia p {
+  font-size: 1.25vw;
+  width: 50%;
+  margin: 0 auto;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
 }
 
 form {
-  max-width: 500px;
-  margin: 0 auto;
-  background-image: url('https://i.pinimg.com/564x/ea/34/53/ea345305c5bf51645a64685e7b30b8c1.jpg');
+  float: right;
+  width: 30%;
+  background-image: url("https://i.pinimg.com/564x/ea/34/53/ea345305c5bf51645a64685e7b30b8c1.jpg");
+  background-size: cover;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -245,7 +280,7 @@ label {
 }
 
 input::placeholder,
-textarea::placeholder{
+textarea::placeholder {
   font-size: 0.8vw;
 }
 
@@ -262,30 +297,30 @@ footer {
   height: 400px;
   padding: 50px 40%;
   text-align: center;
-  background: #bfcec2;;
+  background: #bfcec2;
 }
 
-footer div{
+footer div {
   display: block;
 }
 
 footer div h2,
-footer div a{
+footer div a {
   display: block;
   margin: 20px 0;
 }
 
-footer div h2{
+footer div h2 {
   font-size: 1.5vw;
   margin-bottom: 40px;
 }
 
-footer div a{
+footer div a {
   font-size: 0.8vw;
   text-decoration: none;
   color: black;
 }
 
-footer div a:hover{
+footer div a:hover {
   color: white;
 }
