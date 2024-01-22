@@ -13,7 +13,7 @@ document.getElementById('form-registro').addEventListener('submit', async (event
 
       const data = await response.json();
       console.log('Registro bem-sucedido:', data);
-      alert('Registro bem-sucedido!');
+      alert('Obrigado por compartilhar seus interesses conosco!');
   } catch (error) {
       console.error('Erro ao registrar:', error);
       alert('Por favor, tente novamente.');

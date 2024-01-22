@@ -6,37 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café Encantado</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsividade.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500&display=swap"
-    rel="stylesheet">
+
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Meow+Script&display=swap">
+
 
 </head>
 
 <body>
 
   <header>
-    <img
-      src="https://static.vecteezy.com/system/resources/previews/016/326/235/non_2x/colorful-cute-heart-cat-peeking-free-png.png"
-      alt="logo" id="logo">
+    <figure>
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/016/326/235/non_2x/colorful-cute-heart-cat-peeking-free-png.png"
+        alt="Logo do café. O rosto de um gatinho cinza" id="logo">
+    </figure>
     <div>
       <h1 class="cafe-destaque">Café Encantado ✨</h1>
       <p>Um mundo onde o café e a criatividade se entrelaçam</p>
     </div>
     <nav>
       <ul>
-        <a href="../Principal/Index.html">Home</a>
-        <a href="#main">Menu</a>
-        <a href="#eventos">Eventos</a>
-        <a href="#historia-form">História</a>
+        <li><a href="../Principal/Index.html">Home</a></li>
+        <li><a href="#main">Menu</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#historia-form">História</a></li>
       </ul>
-
     </nav>
   </header>
 
@@ -53,17 +52,18 @@
           arrow_forward
         </span></a>
     </section>
-    <img src="https://i.pinimg.com/564x/82/7e/b9/827eb9d7a62e26079f1fdba1b33d8121.jpg" alt="Fadas comendo bolo">
+    <img src="https://i.pinimg.com/564x/82/7e/b9/827eb9d7a62e26079f1fdba1b33d8121.jpg" alt="Mesa cheia de comida de Alice no País das Maravilhas. Com árvores ao lado e luzes brilhando. E ao fundo um castelo e fogos de artifício.">
   </article>
 
   <main id="main">
     <h2 class="main-titulo">Cardápio</h2>
-    <div class="cards-produtos">
+    <article class="cards-produtos">
 
-      <article class="cards">
+      <ul class="cards">
+
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/84/89/4f/84894f562d6f9388ccf7ac4b211fe15c.jpg" alt="Cinnamoroll Cake"
+            <img src="https://i.pinimg.com/564x/84/89/4f/84894f562d6f9388ccf7ac4b211fe15c.jpg" alt="Imagem do doce chamado Cinnamoroll Cake"
               id="foto">
             <figcaption>Cinnamoroll Cake</figcaption>
           </figure>
@@ -74,7 +74,7 @@
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/89/c6/9e/89c69e192fa5f8e7fc9210a4915861a2.jpg" alt="Delícia de Morango">
+            <img src="https://i.pinimg.com/564x/89/c6/9e/89c69e192fa5f8e7fc9210a4915861a2.jpg" alt="Imagem do doce chamado Delícia de Morango">
             <figcaption>Delícia de Morango</figcaption>
           </figure>
           <p>Experimente a explosão de sabor da nossa Delícia de Morango. Cada camada é cuidadosamente preparada para
@@ -84,7 +84,7 @@
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/736x/36/d9/87/36d987e87bf3f025723639d09264bafb.jpg" alt="Cupcake Moranguete">
+            <img src="https://i.pinimg.com/736x/36/d9/87/36d987e87bf3f025723639d09264bafb.jpg" alt="Imagem do doce chamado Cupcake Moranguete">
             <figcaption>Cupcake Moranguete</figcaption>
           </figure>
           <p>Desfrute do nosso Cupcake Moranguete, uma pequena obra-prima de sabor. A combinação do bolo macio com o
@@ -94,7 +94,7 @@
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/ed/d1/a3/edd1a3b7039809404b6487a6b4aa75cb.jpg" alt="Mini Bolos">
+            <img src="https://i.pinimg.com/564x/ed/d1/a3/edd1a3b7039809404b6487a6b4aa75cb.jpg" alt="Imagem do doce chamado Mini Bolos">
             <figcaption>Mini Bolos</figcaption>
           </figure>
           <p>Os Mini Bolos são a escolha perfeita para quem busca por indulgência em porções pequenas. Cada mini bolo é
@@ -105,7 +105,7 @@
         <section>
           <figure>
             <img src="https://i.pinimg.com/564x/b9/a0/69/b9a0696c2cbc58b4d23a8ed7ba337680.jpg"
-              alt="Explosão de Chocolate">
+              alt="Imagem do doce chamado Explosão de Chocolate">
             <figcaption>Explosão de Chocolate</figcaption>
           </figure>
           <p>Experimente a explosão de sabores da nossa sobremesa "Explosão de Chocolate". Cada camada é cuidadosamente
@@ -116,7 +116,7 @@
         <section>
           <figure>
             <img src="https://i.pinimg.com/564x/72/8d/ba/728dba3a88b758edee2a33d8fe8f4520.jpg"
-              alt="Latte de Morango Sakura">
+              alt="Imagem da bebida chamada Latte de Morango Sakura">
             <figcaption>Latte de Morango Sakura</figcaption>
           </figure>
           <p>Deixe-se envolver pela delicadeza do Latte de Morango Sakura. A combinação única do suave aroma das flores
@@ -126,7 +126,7 @@
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/6b/3b/34/6b3b340286e4240531b3a7254d6f67b7.jpg" alt="Café Mágico">
+            <img src="https://i.pinimg.com/564x/6b/3b/34/6b3b340286e4240531b3a7254d6f67b7.jpg" alt="Imagem da bebida chamada Café Mágico">
             <figcaption>Café Mágico</figcaption>
           </figure>
           <p>Descubra a magia em cada gole do nosso Café Mágico.Este
@@ -136,28 +136,28 @@
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/2b/c8/df/2bc8df9e7cb07b99b698f6bf60193357.jpg" alt="Café Celestial">
+            <img src="https://i.pinimg.com/564x/2b/c8/df/2bc8df9e7cb07b99b698f6bf60193357.jpg" alt="Imagem da bebida chamada Café Celestial">
             <figcaption>Café Celestial</figcaption>
           </figure>
-          <p>Desfrute da simplicidade divina em cada preparo do nosso Café Celestial, combinada com um sabor extraordinário. Deixe-se envolver pela experiência celestial
+          <p>Desfrute da simplicidade divina em cada preparo do nosso Café Celestial, combinada com um sabor
+            extraordinário. Deixe-se envolver pela experiência celestial
             deste café irresistível, onde o extraordinário e o descomplicado se encontram em uma xícara encantadora!</p>
         </section>
 
         <section>
           <figure>
             <img src="https://i.pinimg.com/564x/8f/7d/5b/8f7d5be58c5b5318f4025b5b8a8ce9a5.jpg"
-              alt="Delícia Tropical Frappé">
+              alt="Imagem da bebida chamada Delícia Tropical Frappé">
             <figcaption>Delícia Tropical Frappé</figcaption>
           </figure>
           <p>O Frappé Delícia Tropical é uma sinfonia refrescante de sabores exóticos. Mergulhe nos tons vibrantes desta
             mistura única, onde a doçura suave do coco encontra a vivacidade tropical da manga. Cada gole é uma jornada
-            de frescor e prazer. Sinta a brisa tropical em um copo, e deixe-se levar por essa experiência refrescante e
-            deliciosamente única!</p>
+            de frescor e prazer.</p>
         </section>
 
         <section>
           <figure>
-            <img src="https://i.pinimg.com/564x/bc/81/01/bc8101466d002627cb77604c3f80ad0c.jpg" alt="Shake das Fadas">
+            <img src="https://i.pinimg.com/564x/bc/81/01/bc8101466d002627cb77604c3f80ad0c.jpg" alt="Imagem da bebida chamada Shake das Fadas">
             <figcaption>Shake das Fadas</figcaption>
           </figure>
           <p>Deixe-se levar pela magia do nosso Shake das Fadas. Uma mistura encantadora de sabores que transformam cada
@@ -166,9 +166,9 @@
         </section>
 
 
-      </article>
+      </ul>
 
-    </div>
+    </article>
   </main>
 
   <article id="eventos">
@@ -177,11 +177,13 @@
       eventos são cuidadosamente projetados para transportar você para um mundo onde a imaginação se encontra com a
       realidade. Desfrute de noites encantadoras, poesia que toca a alma, oficinas inspiradoras e muito mais. Confira
       nossa programação e reserve seu lugar para vivenciar momentos inesquecíveis!</p>
-    <table border="1">
+    <table>
       <thead>
-        <th>Evento</th>
-        <th>Data</th>
-        <th>Horário</th>
+        <tr>
+          <th>Evento</th>
+          <th>Data</th>
+          <th>Horário</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -327,7 +329,7 @@
           <label for="novidades">Aceita receber nossas novidades?</label>
         </div>
 
-        <input type="submit" id="submit">
+        <input type="submit" id="submit" value="Enviar">
 
       </form>
     </aside>
@@ -337,19 +339,23 @@
   <footer>
     <img
       src="https://static.vecteezy.com/system/resources/previews/020/001/052/non_2x/coffee-cup-graphic-clipart-design-free-png.png"
-      alt="logo" id="logo">
+      alt="Imagem de uma xícara de café com um desenho de corações feito com leite ">
     <div class="contato">
       <h2>Links</h2>
-      <a href="Index.html">Home</a>
-      <a href="#main">Menu</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#historia-form">História</a>
+      <nav>
+        <ul>
+          <li><a href="../Principal/Index.html">Home</a></li>
+          <li><a href="#main">Menu</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#historia-form">História</a></li>
+        </ul>
+      </nav>
     </div>
 
   </footer>
 
   <script src="script.js"></script>
-  
+
 </body>
 
 </html>
