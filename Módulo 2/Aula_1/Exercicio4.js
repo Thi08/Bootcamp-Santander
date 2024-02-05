@@ -2,14 +2,16 @@
 Crie um algoritmo que, dada uma variável, que recebe o valor de um CPF com formatação, remova essa formatação e armazene esse valor sem formatação, como um 'number'.
 */
 
-function removerFormatacaoCPF(cpfFormatado) {
-  const cpfSemFormatacao = cpfFormatado.replace(/\D/g, '');
-  const cpfComoNumero = parseInt(cpfSemFormatacao, 10);
+function removerFormatacaoCPF(cpf) {
+  const cpfSemFormatacao = cpf.replace(/\D/g, '');
+  const cpfConvertido = parseInt(cpfSemFormatacao, 10);
 
-  return cpfComoNumero;
+  return cpfConvertido;
 }
 
-const cpfFormatado = "123.456.789-09";
-const cpfSemFormatacao = removerFormatacaoCPF(cpfFormatado);
+const cpf = "123.456.789-09";
+const cpfSemFormatacao = removerFormatacaoCPF(cpf);
 
-console.log("CPF sem formatação como número:", cpfSemFormatacao);
+
+console.log("CPF transformado em número:", cpfSemFormatacao);
+
