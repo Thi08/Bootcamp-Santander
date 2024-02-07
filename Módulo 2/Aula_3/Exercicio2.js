@@ -16,9 +16,6 @@ const listaDeAlunos = [
 ];
 
 for (const { nome, notas } of listaDeAlunos) {
-  let media = 0;
-  for (let i = 0; i < notas.length; i++) {
-    media += notas[i];
-  }
-  console.log(`Nome do aluno: ${nome}, média: ${Math.round((media / notas.length))}`);
+  const media = notas.reduce((total, nota) => total + nota, 0) / notas.length;
+  console.log(`Nome do aluno: ${nome}, média: ${Math.round(media)}`);
 }
