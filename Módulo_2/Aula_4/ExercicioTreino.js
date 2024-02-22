@@ -1,1 +1,0 @@
-//Temos 3 intervalos de CEP são eles:   '09000001', até '09399999',  '09600001' até '09899999' e '09500001' até '09599999'. Precisa identificar se o CEP informado esta entre um dos 3 intervalos. Criar uma classe em PHP que retorne True ou False para o CEP definido na hora de instanciar o objeto.
