@@ -1,3 +1,5 @@
+import { transpileModule } from "typescript";
+
 class Conta {
   private _nomeTitular: string;
   private _saldo: number;
@@ -38,15 +40,15 @@ class Conta {
   }
 
   depositar(valor: number): string {
-    if (!this.contaAtiva || valor <= 0) 
-    return `Algum erro ocorreu. Verifique se a conta está ativa e se o valor de depósito é válido.`;
+    if (!this.contaAtiva || valor <= 0)
+      return `Algum erro ocorreu. Verifique se a conta está ativa e se o valor de depósito é válido.`;
     this._saldo += valor;
     return `Depósito feito com sucesso, o novo saldo é ${this._saldo} reais.`;
   }
 
   sacar(valor: number): string {
-    if (!this.contaAtiva || this.saldo < valor || valor <= 0) 
-    return `Algum erro ocorreu. Verifique se a conta está ativa, se o saldo dela é maior do que zero e se o valor de saque é válido.`;
+    if (!this.contaAtiva || this.saldo < valor || valor <= 0)
+      return `Algum erro ocorreu. Verifique se a conta está ativa, se o saldo dela é maior do que zero e se o valor de saque é válido.`;
     this._saldo -= valor;
     return `Saque feito com sucesso, o saldo restante é ${this._saldo} reais.`;
   }
@@ -54,10 +56,40 @@ class Conta {
   obterSaldo(): string {
     return `O saldo atual é ${this._saldo} reais.`;
   }
+
+  transferir(valor: number, contaDestino: Conta): string {
+    if (!this.contaAtiva || !contaDestino.contaAtiva || valor < 0) {
+      return `Algum erro ocorreu. A conta 1 ou a conta 2 está inativa ou o valor passado é inválido.`;
+    }
+    if (this._saldo < 0) return `O saldo da conta 1 é melhor que zero.`;
+
+    this._saldo -= valor;
+    contaDestino._saldo += valor;
+    return `Transferência realizada com sucesso. O saldo atual das contas são, respectivamente: ${this._saldo} e ${contaDestino._saldo} reais.`;
+  }
 }
 
-const conta = new Conta("Thiago", 0, true);
-console.log(conta);
+class Pessoa {
+  _nome: string;
+  _idade: number;
+  _cpf: string;
+
+  constructor(nome: string, idade: number, cpf: string) {
+    this._nome = nome;
+    this._idade = idade;
+    this._cpf = cpf;
+  }
+
+  exibirDados(): string {
+    return `nome: ${this._nome}, idade: ${this._idade}, cpf: ${this._cpf}`;
+  }
+}
+
+const conta1 = new Conta("Albino", 500, true);
+const conta2 = new Conta("Thiago", 500, true);
+
+console.log(conta1.transferir(200, conta2));
+
 
 // console.log(conta.depositar(100))
 // console.log(conta.sacar(100))
